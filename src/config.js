@@ -1,4 +1,4 @@
-const appName = process.env.APP_NAME || "geoapi"
+const appName = "geoapi"
 
 export default {
   app: {
@@ -7,7 +7,7 @@ export default {
 
   server: {
     // isProduction: process.env.NODE_ENV === 'production',
-    port: process.env.PORT || 8080
+    port:  49153
   },
   
   logger: {
@@ -15,7 +15,7 @@ export default {
       name: appName,
       streams: [
         {
-          level: process.env.LOGGING_LEVEL || "info",
+          level: "info",
           stream: process.stdout
         }
       ]
