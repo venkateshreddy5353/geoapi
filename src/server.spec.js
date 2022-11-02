@@ -3,7 +3,7 @@ import net from 'net'
 import request from 'request-promise-native'
 import startServer from './server'
 
-const port = 9999
+const port = 49153
 
 describe('#startServer', function() {
   before(`start server`, async function() {
